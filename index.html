@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Tamara Jotanović - student softverskog inženjeringa. Pogledajte moje vještine i kontakt informacije."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link href="dialog/dialog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="nav-bar">
+          <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div id="home" class="header-content">
+          <div class="header-text">
+            <h1>Hey, I'm Tamara</h1>
+            <p>
+              Software Engineering student, problem solver, and tech explorer.
+              Here's a peek into my world of code and creativity.
+            </p>
+            <a href="files/CV_.pdf" download>
+              <button class="cv">Download my CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="About">
+        <div class="about-me-text">
+          <h1>About me</h1>
+          <h2>____</h2>
+          <p>
+            Motivated Software Engineering student with strong problem-solving
+            skills and experience in online collaboration. Passionate about
+            contributing to development projects and growing professionally.
+          </p>
+          <div id="more" class="hidden-text">
+            <p>
+              I have foundational knowledge of HTML, CSS, and JavaScript, and I
+              am eager to continue learning and improving my skills. Open to new
+              challenges, I am committed to developing my expertise further and
+              quickly adapting to new tools and technologies.
+            </p>
+            <h2>____</h2>
+          </div>
+          <button id="about-me-button" class="about-me-button">
+            Show More
+          </button>
+        </div>
+      </div>
+
+      <div id="skills" class="skills">
+        <h1>My skills</h1>
+        <div class="skills-content">
+          <div class="skill-card">
+            <div class="skills-card-container" id="skills-card-1">
+              <i class="devicon-html5-plain colored"></i>
+              <h2>HTML</h2>
+              <p>
+                Able to build the foundation of a webpage with well-structured
+                HTML, creating organized and accessible structures.
+              </p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skills-card-container" id="skills-card-2">
+              <i class="devicon-css3-plain"></i>
+              <h2>CSS</h2>
+              <p>
+                Proficient in designing and styling web pages, ensuring clean,
+                modern and user-friendly layouts with CSS.
+              </p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skills-card-container" id="skills-card-3">
+              <i class="devicon-javascript-plain"></i>
+              <h2>JavaScript</h2>
+              <p>
+                Implements JavaScript to enhance webpage functionality, creating
+                intuitive and accessible interfaces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="experience" class="slider">
+        <h1>Experience</h1>
+        <div class="slideshow-container">
+          <div class="slideshow-slides">
+            <div class="mySlides">
+              <h2>English language Instructor</h2>
+              <p>
+                Developed strong communication and presentation skills by
+                explaining complex concepts clearly to diverse audiences.
+                Adapted teaching materials to different learning styles,
+                demonstrating problem-solving and adaptability. Managed classes
+                and organized lesson plans, honing project management and
+                organizational skills. Collaborated with students to achieve
+                learning goals, enhancing teamwork and client-focused approach.
+              </p>
+            </div>
+
+            <div class="mySlides">
+              <h2>Software Engineering Student</h2>
+              <p>
+                Currently a second-year Software Engineering student, passionate
+                about web development and design. Actively seeking entry-level
+                positions in web development or web design. Experience in HTML,
+                CSS, and JavaScript for building projects.
+              </p>
+            </div>
+
+            <div class="mySlides">
+              <h2>Web Development & Design Projects</h2>
+              <p>
+                Passionate about creating responsive, user-friendly, and
+                visually appealing websites. Eager to apply my skills in
+                real-world projects and continuously learn new technologies
+              </p>
+            </div>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev btnSlider" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next btnSlider" onclick="plusSlides(1)">&#10095;</a>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="form-group">
+            <label form="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label form="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label form="subject">Subject</label>
+            <input type="subject" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label form="message">Message</label>
+            <input type="message" id="message" name="message" required />
+          </div>
+          <button type="submit" onclick="sendMail(event)">Send</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2025 Tamara Jotanović. All rights reserved.</p>
+    </footer>
+    <script src="dialog/dialog.js"></script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Dbno6_iog3bNgR-7t",
+        });
+      })();
+    </script>
+  </body>
+</html>
